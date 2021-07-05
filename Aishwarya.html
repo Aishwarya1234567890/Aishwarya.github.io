@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f2f3f5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.header{  
+                padding: 50px;  
+                background-color:#f2f3f5;  
+                text-align: left;  
+               }  
+            
+             
+      
+
+
+
+h3 {text-align: center;}
+h4 {text-align: center;}
+
+   
+</style>
+</head>
+<body style="background-color:#e1e5eb;">
+
+ 
+     <div class="header">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	  
+      
+
+	</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Student</a>
+  <a href="#">Lesson plan</a>
+  <a href="#">Setting</a>
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "150px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+
+</script>
+
+<h3>Videos</h3>
+  
+  
+
+<h4>
+ 
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+  Insert URL here: <input type="text" size="50" name="fname">
+  
+</form>
+<br>
+<br>
+<strong>OR</strong>
+
+<br>
+<br>
+
+<form action="/action_page.php">
+  <label for="video">Upload :</label>
+  <input type="file" size="50" id="video" name="video" accept="video/*"><br><br>
+  <input type="submit">
+</form>
+
+</h4>
+
+
+
+
+
+   
+</body>
+</html> 
